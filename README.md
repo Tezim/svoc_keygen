@@ -19,11 +19,10 @@ The arduino generator is used for generating random entropy source for seeding H
 NIST SP-800 90A. The output of generator is used to generate random private and public key and output them to coressponding files.
 
 ## Usage
-1. Connect arduino with implemented generator code
-2. 
+Before use change port "COM9" to port on which you have connected the generator if file Gen/helpers.cpp::140
 
 ## Project Structure
-- ARD - Contains C code implemented on arduino
+- arduino.c - Contains C code implemented on arduino
 - gen - Implementation of keygen algorithm
 - HMAC_DRBG - HMAC DRBG implementation where entropy is taken from hardware device
 - NTL - ntl library headers
